@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6792A04732812A5C926A6769 /* libPods-FadeTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E35012F93E3199B055F763 /* libPods-FadeTableView.a */; };
+		BAA8FB851D2F89C30054DA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FB841D2F89C30054DA6A /* main.m */; };
+		BAA8FB881D2F89C30054DA6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FB871D2F89C30054DA6A /* AppDelegate.m */; };
+		BAA8FB8E1D2F89C30054DA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FB8C1D2F89C30054DA6A /* Main.storyboard */; };
+		BAA8FB901D2F89C30054DA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FB8F1D2F89C30054DA6A /* Assets.xcassets */; };
+		BAA8FB931D2F89C30054DA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FB911D2F89C30054DA6A /* LaunchScreen.storyboard */; };
+		BAA8FB9E1D2F89C30054DA6A /* FadeTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FB9D1D2F89C30054DA6A /* FadeTableViewTests.m */; };
+		BAA8FBA91D2F89C30054DA6A /* FadeTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FBA81D2F89C30054DA6A /* FadeTableViewUITests.m */; };
+		BAA8FBB81D2F8C560054DA6A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FBB71D2F8C560054DA6A /* RootViewController.m */; };
+		BAA8FBBB1D2F9B040054DA6A /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FBBA1D2F9B040054DA6A /* SectionModel.m */; };
+		BAA8FBBE1D2F9BCC0054DA6A /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FBBD1D2F9BCC0054DA6A /* CellModel.m */; };
+		BAA8FBC11D2F9D680054DA6A /* YCZSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FBC01D2F9D680054DA6A /* YCZSectionHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAA8FB9A1D2F89C30054DA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAA8FB781D2F89C30054DA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA8FB7F1D2F89C30054DA6A;
+			remoteInfo = FadeTableView;
+		};
+		BAA8FBA51D2F89C30054DA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAA8FB781D2F89C30054DA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA8FB7F1D2F89C30054DA6A;
+			remoteInfo = FadeTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E35012F93E3199B055F763 /* libPods-FadeTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FadeTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708E6AB1B899C8E8559E7FC8 /* Pods-FadeTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FadeTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FadeTableView/Pods-FadeTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		BAA8FB801D2F89C30054DA6A /* FadeTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FadeTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA8FB841D2F89C30054DA6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAA8FB861D2F89C30054DA6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAA8FB871D2F89C30054DA6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAA8FB8D1D2F89C30054DA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAA8FB8F1D2F89C30054DA6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAA8FB921D2F89C30054DA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAA8FB941D2F89C30054DA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA8FB991D2F89C30054DA6A /* FadeTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FadeTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA8FB9D1D2F89C30054DA6A /* FadeTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FadeTableViewTests.m; sourceTree = "<group>"; };
+		BAA8FB9F1D2F89C30054DA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA8FBA41D2F89C30054DA6A /* FadeTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FadeTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA8FBA81D2F89C30054DA6A /* FadeTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FadeTableViewUITests.m; sourceTree = "<group>"; };
+		BAA8FBAA1D2F89C30054DA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA8FBB61D2F8C560054DA6A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BAA8FBB71D2F8C560054DA6A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BAA8FBB91D2F9B040054DA6A /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
+		BAA8FBBA1D2F9B040054DA6A /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
+		BAA8FBBC1D2F9BCC0054DA6A /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		BAA8FBBD1D2F9BCC0054DA6A /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		BAA8FBBF1D2F9D680054DA6A /* YCZSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCZSectionHeaderView.h; sourceTree = "<group>"; };
+		BAA8FBC01D2F9D680054DA6A /* YCZSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCZSectionHeaderView.m; sourceTree = "<group>"; };
+		FAC90553CACFF06321350F93 /* Pods-FadeTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FadeTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FadeTableView/Pods-FadeTableView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAA8FB7D1D2F89C30054DA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6792A04732812A5C926A6769 /* libPods-FadeTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FB961D2F89C30054DA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FBA11D2F89C30054DA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E215F5FF00F10B8A2868C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				708E6AB1B899C8E8559E7FC8 /* Pods-FadeTableView.debug.xcconfig */,
+				FAC90553CACFF06321350F93 /* Pods-FadeTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BFE7158749B2F6D2EE5A83B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E35012F93E3199B055F763 /* libPods-FadeTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAA8FB771D2F89C30054DA6A = {
+			isa = PBXGroup;
+			children = (
+				BAA8FB821D2F89C30054DA6A /* FadeTableView */,
+				BAA8FB9C1D2F89C30054DA6A /* FadeTableViewTests */,
+				BAA8FBA71D2F89C30054DA6A /* FadeTableViewUITests */,
+				BAA8FB811D2F89C30054DA6A /* Products */,
+				0E215F5FF00F10B8A2868C57 /* Pods */,
+				6BFE7158749B2F6D2EE5A83B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAA8FB811D2F89C30054DA6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FB801D2F89C30054DA6A /* FadeTableView.app */,
+				BAA8FB991D2F89C30054DA6A /* FadeTableViewTests.xctest */,
+				BAA8FBA41D2F89C30054DA6A /* FadeTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAA8FB821D2F89C30054DA6A /* FadeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FB861D2F89C30054DA6A /* AppDelegate.h */,
+				BAA8FB871D2F89C30054DA6A /* AppDelegate.m */,
+				BAA8FBB61D2F8C560054DA6A /* RootViewController.h */,
+				BAA8FBB71D2F8C560054DA6A /* RootViewController.m */,
+				BAA8FBB91D2F9B040054DA6A /* SectionModel.h */,
+				BAA8FBBA1D2F9B040054DA6A /* SectionModel.m */,
+				BAA8FBBC1D2F9BCC0054DA6A /* CellModel.h */,
+				BAA8FBBD1D2F9BCC0054DA6A /* CellModel.m */,
+				BAA8FBBF1D2F9D680054DA6A /* YCZSectionHeaderView.h */,
+				BAA8FBC01D2F9D680054DA6A /* YCZSectionHeaderView.m */,
+				BAA8FB8C1D2F89C30054DA6A /* Main.storyboard */,
+				BAA8FB8F1D2F89C30054DA6A /* Assets.xcassets */,
+				BAA8FB911D2F89C30054DA6A /* LaunchScreen.storyboard */,
+				BAA8FB941D2F89C30054DA6A /* Info.plist */,
+				BAA8FB831D2F89C30054DA6A /* Supporting Files */,
+			);
+			path = FadeTableView;
+			sourceTree = "<group>";
+		};
+		BAA8FB831D2F89C30054DA6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FB841D2F89C30054DA6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAA8FB9C1D2F89C30054DA6A /* FadeTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FB9D1D2F89C30054DA6A /* FadeTableViewTests.m */,
+				BAA8FB9F1D2F89C30054DA6A /* Info.plist */,
+			);
+			path = FadeTableViewTests;
+			sourceTree = "<group>";
+		};
+		BAA8FBA71D2F89C30054DA6A /* FadeTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FBA81D2F89C30054DA6A /* FadeTableViewUITests.m */,
+				BAA8FBAA1D2F89C30054DA6A /* Info.plist */,
+			);
+			path = FadeTableViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAA8FB7F1D2F89C30054DA6A /* FadeTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA8FBAD1D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableView" */;
+			buildPhases = (
+				A0BF044FE026CEB893CB7E1B /* [CP] Check Pods Manifest.lock */,
+				BAA8FB7C1D2F89C30054DA6A /* Sources */,
+				BAA8FB7D1D2F89C30054DA6A /* Frameworks */,
+				BAA8FB7E1D2F89C30054DA6A /* Resources */,
+				2A59BCD3EFEA482DFD392B16 /* [CP] Embed Pods Frameworks */,
+				4037D4A201CBCB4D900652D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FadeTableView;
+			productName = FadeTableView;
+			productReference = BAA8FB801D2F89C30054DA6A /* FadeTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAA8FB981D2F89C30054DA6A /* FadeTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA8FBB01D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableViewTests" */;
+			buildPhases = (
+				BAA8FB951D2F89C30054DA6A /* Sources */,
+				BAA8FB961D2F89C30054DA6A /* Frameworks */,
+				BAA8FB971D2F89C30054DA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA8FB9B1D2F89C30054DA6A /* PBXTargetDependency */,
+			);
+			name = FadeTableViewTests;
+			productName = FadeTableViewTests;
+			productReference = BAA8FB991D2F89C30054DA6A /* FadeTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAA8FBA31D2F89C30054DA6A /* FadeTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA8FBB31D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableViewUITests" */;
+			buildPhases = (
+				BAA8FBA01D2F89C30054DA6A /* Sources */,
+				BAA8FBA11D2F89C30054DA6A /* Frameworks */,
+				BAA8FBA21D2F89C30054DA6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA8FBA61D2F89C30054DA6A /* PBXTargetDependency */,
+			);
+			name = FadeTableViewUITests;
+			productName = FadeTableViewUITests;
+			productReference = BAA8FBA41D2F89C30054DA6A /* FadeTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAA8FB781D2F89C30054DA6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = crystal;
+				TargetAttributes = {
+					BAA8FB7F1D2F89C30054DA6A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BAA8FB981D2F89C30054DA6A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BAA8FB7F1D2F89C30054DA6A;
+					};
+					BAA8FBA31D2F89C30054DA6A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BAA8FB7F1D2F89C30054DA6A;
+					};
+				};
+			};
+			buildConfigurationList = BAA8FB7B1D2F89C30054DA6A /* Build configuration list for PBXProject "FadeTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAA8FB771D2F89C30054DA6A;
+			productRefGroup = BAA8FB811D2F89C30054DA6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA8FB7F1D2F89C30054DA6A /* FadeTableView */,
+				BAA8FB981D2F89C30054DA6A /* FadeTableViewTests */,
+				BAA8FBA31D2F89C30054DA6A /* FadeTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAA8FB7E1D2F89C30054DA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8FB931D2F89C30054DA6A /* LaunchScreen.storyboard in Resources */,
+				BAA8FB901D2F89C30054DA6A /* Assets.xcassets in Resources */,
+				BAA8FB8E1D2F89C30054DA6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FB971D2F89C30054DA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FBA21D2F89C30054DA6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A59BCD3EFEA482DFD392B16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FadeTableView/Pods-FadeTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4037D4A201CBCB4D900652D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FadeTableView/Pods-FadeTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0BF044FE026CEB893CB7E1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA8FB7C1D2F89C30054DA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8FB881D2F89C30054DA6A /* AppDelegate.m in Sources */,
+				BAA8FBB81D2F8C560054DA6A /* RootViewController.m in Sources */,
+				BAA8FB851D2F89C30054DA6A /* main.m in Sources */,
+				BAA8FBBE1D2F9BCC0054DA6A /* CellModel.m in Sources */,
+				BAA8FBC11D2F9D680054DA6A /* YCZSectionHeaderView.m in Sources */,
+				BAA8FBBB1D2F9B040054DA6A /* SectionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FB951D2F89C30054DA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8FB9E1D2F89C30054DA6A /* FadeTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA8FBA01D2F89C30054DA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8FBA91D2F89C30054DA6A /* FadeTableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAA8FB9B1D2F89C30054DA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA8FB7F1D2F89C30054DA6A /* FadeTableView */;
+			targetProxy = BAA8FB9A1D2F89C30054DA6A /* PBXContainerItemProxy */;
+		};
+		BAA8FBA61D2F89C30054DA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA8FB7F1D2F89C30054DA6A /* FadeTableView */;
+			targetProxy = BAA8FBA51D2F89C30054DA6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAA8FB8C1D2F89C30054DA6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA8FB8D1D2F89C30054DA6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAA8FB911D2F89C30054DA6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA8FB921D2F89C30054DA6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAA8FBAB1D2F89C30054DA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAA8FBAC1D2F89C30054DA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAA8FBAE1D2F89C30054DA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708E6AB1B899C8E8559E7FC8 /* Pods-FadeTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FadeTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		BAA8FBAF1D2F89C30054DA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC90553CACFF06321350F93 /* Pods-FadeTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FadeTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		BAA8FBB11D2F89C30054DA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FadeTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FadeTableView.app/FadeTableView";
+			};
+			name = Debug;
+		};
+		BAA8FBB21D2F89C30054DA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FadeTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FadeTableView.app/FadeTableView";
+			};
+			name = Release;
+		};
+		BAA8FBB41D2F89C30054DA6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FadeTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FadeTableView;
+			};
+			name = Debug;
+		};
+		BAA8FBB51D2F89C30054DA6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FadeTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.crystal.FadeTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FadeTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAA8FB7B1D2F89C30054DA6A /* Build configuration list for PBXProject "FadeTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA8FBAB1D2F89C30054DA6A /* Debug */,
+				BAA8FBAC1D2F89C30054DA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA8FBAD1D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA8FBAE1D2F89C30054DA6A /* Debug */,
+				BAA8FBAF1D2F89C30054DA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA8FBB01D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA8FBB11D2F89C30054DA6A /* Debug */,
+				BAA8FBB21D2F89C30054DA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA8FBB31D2F89C30054DA6A /* Build configuration list for PBXNativeTarget "FadeTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA8FBB41D2F89C30054DA6A /* Debug */,
+				BAA8FBB51D2F89C30054DA6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAA8FB781D2F89C30054DA6A /* Project object */;
+}
