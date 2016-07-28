@@ -20,8 +20,6 @@ NSString *const cellIdentifer = @"cellIdentifer";
 
 @end
 
-#pragma mark lifecyclemethod
-
 @implementation RootViewController
 
 - (void)viewDidLoad {
