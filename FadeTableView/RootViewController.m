@@ -27,7 +27,6 @@ NSString *const cellIdentifer = @"cellIdentifer";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setupDataSource];
     [self setupUI];
 }
 
