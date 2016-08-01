@@ -41,33 +41,6 @@ NSString *const cellIdentifer = @"cellIdentifer";
     
 }
 
-- (void)setupDataSource {
-    
-    _dataSource = [NSMutableArray array];
-    
-    for (int i = 0; i < 5; i++) {
-        
-        SectionModel *secModel = [[SectionModel alloc] init];
-        secModel.sectionTitle = [NSString stringWithFormat:@"Crystal%d",i];
-
-        [_dataSource addObject:secModel];
-    }
-    
-    for (int i = 0; i < 5; i++) {
-        
-        NSMutableArray *cellArray = [NSMutableArray array];
-        
-        for (int j = 0; j <= i; j++) {
-            
-            [cellArray addObject:[NSString stringWithFormat:@"Cell%d",j]];
-        }
-        
-        SectionModel *secModel = _dataSource[i];
-        secModel.cellDataSource = cellArray;
-    }
-    
-}
-
 - (void)setupUI {
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
