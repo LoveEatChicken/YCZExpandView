@@ -1,0 +1,14 @@
+//
+//  Crystal.pch
+//  FadeTableView
+//
+//  Created by Crystal on 16/8/8.
+//  Copyright © 2016年 crystal. All rights reserved.
+//
+
+#ifndef Crystal_pch
+#define Crystal_pch
+
+#import "Config.h"
+
+#endif /* Crystal_pch */
